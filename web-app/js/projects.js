@@ -29,7 +29,6 @@ function getProjectHTML(projectName) {
         'typing-speed-tester': getTypingSpeedTesterHTML(),
         'snake-game': getsnakeGameHTML(),
         'password-forge': getPasswordForgeHTML(),
-        'tic-tac-toe': getTicTacToeHTML(),
         'math-quiz': getMathQuizHTML(),
         'whack-a-mole': getWhackaMoleHTML(),  
         'simon-says': getSimonSaysHTML(),
