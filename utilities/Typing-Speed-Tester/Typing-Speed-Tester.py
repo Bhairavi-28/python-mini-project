@@ -38,7 +38,10 @@ def get_random_phrase():
             with urllib.request.urlopen(req, timeout=3) as response:
                 data = json.loads(response.read().decode())
                 # dummyjson uses 'quote', quotable uses 'content'
-                return data.get('quote') or data.get('content')
+                phrase = data.get('quote') or data.get('content')
+                if phrase:
+                    return phrase
+                continue # Try next API if response shape is unexpected
         except Exception:
             continue # Try next API if one fails
             
